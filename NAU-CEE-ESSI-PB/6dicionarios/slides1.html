@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="João Manuel Rodrigues">
-  <title>Dicionários</title>
+  <title>Dicionários: Essencial</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -96,7 +96,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Dicionários</h1>
+  <h1 class="title">Dicionários: Essencial</h1>
   <p class="author">João Manuel Rodrigues</p>
   <p class="date">Universidade de Aveiro</p>
 </section>
@@ -106,7 +106,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <aside class="notes">
 <p>Um dicionário é um objeto composto por pares chave-valor. Dada uma chave, o dicionário permite encontrar rapidamente o valor associado. Como os elementos são identificados através da chave, a ordem é irrelevante. Mas cada elemento tem de ter uma chave única, distinta das restantes. Por isso dizemos que um dicionário é uma coleção associativa, não ordenada de elementos únicos.</p>
 </aside>
-<audio data-autoplay data-src="media/10-definition.ogg">
+<audio data-autoplay data-src="media/11-definition.ogg">
 </audio>
 <dl>
 <dt><em>Dicionário</em> (= <em>vetor associativo</em>):</dt>
@@ -126,87 +126,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <aside class="notes">
 <p>Podemos criar um dicionário definindo-o <em>por extensão</em> como se vê nas linhas 2 e 3. (Pressione <code>Next</code> para avançar passo-a-passo.) Podemos indexar o dicionário com uma chave para obter o valor associado, como se vê nas linhas 6 e 7. Também podemos criar um dicionário vazio (como na linha 10) e depois acrescentar-lhe pares chave-valor usando instruções de atribuição como nas linhas 13 e 14. A atribuição na linha 15 não acrescenta um elemento. Apenas altera o valor associado à chave pré-existente.</p>
 </aside>
-<audio data-autoplay data-src="media/20-basic-ops.ogg">
+<audio data-autoplay data-src="media/12-basic-ops.ogg">
 </audio>
-<iframe width="1000" height="500" frameborder="0" data-src="https://pythontutor.com/iframe-embed.html#code=%23%20CRIAR%20dicion%C3%A1rio%20por%20extens%C3%A3o%0Acapitais%20%3D%20%7B&#39;Portugal&#39;%3A%20&#39;Lisboa&#39;,%20%20&#39;Angola&#39;%3A%20&#39;Luanda&#39;,%0A%20%20%20%20%20%20%20%20%20%20%20%20&#39;Brasil&#39;%3A%20&#39;Bras%C3%ADlia&#39;,%20&#39;Espanha&#39;%3A%20&#39;Madrid&#39;%7D%0A%0A%23%20INDEXAR%20%28com%20chave%29%0Aprint%28%20capitais%5B&#39;Brasil&#39;%5D%20%29%0Aprint%28%20capitais%5B&#39;Portugal&#39;%5D%20%29%0A%0A%23%20CRIAR%20dicion%C3%A1rio%20vazio%0Acompras%20%3D%20%7B%7D%0A%0A%23%20ACRESCENTAR/MODIFICAR%20elementos%0Acompras%5B&#39;ovo&#39;%5D%20%3D%206%0Acompras%5B&#39;sal&#39;%5D%20%3D%202.0%0Acompras%5B&#39;ovo&#39;%5D%20%3D%2012%0Aprint%28%20compras%20%29%0A&amp;codeDivHeight=400&amp;codeDivWidth=550&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=false&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false">
+<iframe width="1000" height="500" frameborder="0" data-src="https://pythontutor.com/iframe-embed.html#code=%23%20CRIAR%20dicion%C3%A1rio%20por%20extens%C3%A3o%0Acapitais%20%3D%20%7B&#39;Portugal&#39;%3A%20&#39;Lisboa&#39;,%20&#39;Angola&#39;%3A%20&#39;Luanda&#39;,%0A%20%20%20%20%20%20%20%20%20%20%20%20&#39;Brasil&#39;%3A%20&#39;Bras%C3%ADlia&#39;,%20&#39;Espanha&#39;%3A%20&#39;Madrid&#39;%7D%0A%0A%23%20INDEXAR%20%28com%20chave%29%0Aprint%28%20capitais%5B&#39;Brasil&#39;%5D%20%29%0Aprint%28%20capitais%5B&#39;Portugal&#39;%5D%20%29%0A%0A%23%20CRIAR%20dicion%C3%A1rio%20vazio%0Acompras%20%3D%20%7B%7D%0A%0A%23%20ACRESCENTAR/MODIFICAR%20elementos%0Acompras%5B&#39;ovo&#39;%5D%20%3D%206%0Acompras%5B&#39;sal&#39;%5D%20%3D%202.0%0Acompras%5B&#39;ovo&#39;%5D%20%3D%2012%0Aprint%28%20compras%20%29%0A&amp;codeDivHeight=400&amp;codeDivWidth=540&amp;cumulative=false&amp;curInstr=0&amp;heapPrimitives=false&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false">
 </iframe>
+<style>
+.small  { font-size: small; }
+</style>
+<p><span class="small">Pressione Next&gt; para avançar.</span></p>
 </section>
 <section id="indexação-segura" class="slide level2">
 <h2>Indexação segura</h2>
 <aside class="notes">
 <p>Indexar um dicionário com uma chave inexistente é um erro de tipo <code>KeyError</code>. Por isso, antes de indexar com uma chave desconhecida, devemos verificar se ela está no dicionário ou não. Os operadores <code>in</code> e <code>not in</code> servem para isso. Avance passo-a-passo para perceber como se usam.</p>
 </aside>
-<audio data-autoplay data-src="media/30-index-safe.ogg">
+<audio data-autoplay data-src="media/13-index-safe.ogg">
 </audio>
-<iframe width="1000" height="500" frameborder="0" data-src="https://pythontutor.com/iframe-embed.html#code=stock%20%3D%20%7B&#39;peras&#39;%3A%2012,%20&#39;laranjas&#39;%3A%204%7D%0A%0A%23%20Operador%20de%20PERTEN%C3%87A%20verifica%20exist%C3%AAncia%20da%20chave%0Aprint%28%20&#39;laranjas&#39;%20in%20stock%20%29%0Aprint%28%20&#39;bananas&#39;%20not%20in%20stock%20%29%0A%0Afor%20i%20in%20range%282%29%3A%0A%20%20%20%20chave%20%3D%20input%28%22produto%3F%20%22%29%0A%20%20%20%20if%20chave%20in%20stock%3A%0A%20%20%20%20%20%20%20%20valor%20%3D%20stock%5Bchave%5D%0A%20%20%20%20%20%20%20%20print%28chave,%20%22temos%22,%20valor%29%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20%23%20stock%5Bchave%5D%20produziria%20KeyError!%0A%20%20%20%20%20%20%20%20print%28chave,%20%22n%C3%A3o%20temos%22%29%0A&amp;codeDivHeight=400&amp;codeDivWidth=550&amp;cumulative=false&amp;curInstr=1&amp;heapPrimitives=false&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%22laranjas%22,%22bananas%22%5D&amp;textReferences=false">
+<iframe width="1000" height="500" frameborder="0" data-src="https://pythontutor.com/iframe-embed.html#code=stock%20%3D%20%7B&#39;peras&#39;%3A%2012,%20&#39;laranjas&#39;%3A%204%7D%0A%0A%23%20Operador%20de%20PERTEN%C3%87A%20verifica%20exist%C3%AAncia%20da%20chave%0Aprint%28%20&#39;laranjas&#39;%20in%20stock%20%29%0Aprint%28%20&#39;bananas&#39;%20not%20in%20stock%20%29%0A%0Afor%20i%20in%20range%282%29%3A%0A%20%20%20%20chave%20%3D%20input%28%22produto%3F%20%22%29%0A%20%20%20%20if%20chave%20in%20stock%3A%0A%20%20%20%20%20%20%20%20valor%20%3D%20stock%5Bchave%5D%0A%20%20%20%20%20%20%20%20print%28chave,%20%22temos%22,%20valor%29%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20%23%20stock%5Bchave%5D%20produziria%20KeyError!%0A%20%20%20%20%20%20%20%20print%28chave,%20%22n%C3%A3o%20temos%22%29%0A&amp;codeDivHeight=400&amp;codeDivWidth=540&amp;cumulative=false&amp;curInstr=1&amp;heapPrimitives=false&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%22laranjas%22,%22bananas%22%5D&amp;textReferences=false">
 </iframe>
+<p><span class="small">Pressione Next&gt; para avançar.</span></p>
 </section>
 <section id="acesso-seguro-com-get" class="slide level2">
-<h2>Acesso seguro com <code>get</code></h2>
+<h2>Acesso seguro com get</h2>
 <aside class="notes">
 <p>Em alternativa à indexação podemos usar o método <code>get</code>, que devolve um valor mesmo que a chave não exista. Avance passo-a-passo para perceber como se usa.</p>
 </aside>
-<audio data-autoplay data-src="media/40-get.ogg">
+<audio data-autoplay data-src="media/14-get.ogg">
 </audio>
-<iframe width="1000" height="500" frameborder="0" data-src="https://pythontutor.com/iframe-embed.html#code=stock%20%3D%20%7B&#39;peras&#39;%3A%2012,%20&#39;laranjas&#39;%3A%204%7D%0A%0A%23%20d.get%28k,%20val%29%20devolve%20...%0Aprint%28%20stock.get%28&#39;laranjas&#39;,%200%29%20%29%20%20%20%23%20d%5Bk%5D%20se%20k%20in%20d%0Aprint%28%20stock.get%28&#39;bananas&#39;,%200%29%20%29%20%20%20%20%23%20val%20se%20k%20not%20in%20d%0A%0Aprint%28%20stock.get%28&#39;bananas&#39;%29%20%29%20%20%20%20%20%20%20%23%20%28val%3DNone%20se%20omitido%29%0A%0Afor%20i%20in%20range%282%29%3A%0A%20%20%20%20chave%20%3D%20input%28%22produto%3F%20%22%29%0A%20%20%20%20valor%20%3D%20stock.get%28chave,%200%29%0A%20%20%20%20print%28chave,%20%22temos%22,%20valor%29%0A&amp;codeDivHeight=400&amp;codeDivWidth=550&amp;cumulative=false&amp;curInstr=1&amp;heapPrimitives=false&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%22laranjas%22,%22bananas%22%5D&amp;textReferences=false">
+<iframe width="1000" height="500" frameborder="0" data-src="https://pythontutor.com/iframe-embed.html#code=stock%20%3D%20%7B&#39;peras&#39;%3A%2012,%20&#39;laranjas&#39;%3A%204%7D%0A%0A%23%20d.get%28k,%20val%29%20devolve%20...%0Aprint%28%20stock.get%28&#39;laranjas&#39;,%200%29%20%29%20%20%20%23%20d%5Bk%5D%20se%20k%20in%20d%0Aprint%28%20stock.get%28&#39;bananas&#39;,%200%29%20%29%20%20%20%20%23%20val%20se%20k%20not%20in%20d%0A%0Aprint%28%20stock.get%28&#39;bananas&#39;%29%20%29%20%20%20%20%20%20%20%23%20%28val%3DNone%20se%20omitido%29%0A%0Afor%20i%20in%20range%282%29%3A%0A%20%20%20%20chave%20%3D%20input%28%22produto%3F%20%22%29%0A%20%20%20%20valor%20%3D%20stock.get%28chave,%200%29%0A%20%20%20%20print%28chave,%20%22temos%22,%20valor%29%0A&amp;codeDivHeight=400&amp;codeDivWidth=540&amp;cumulative=false&amp;curInstr=1&amp;heapPrimitives=false&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%22laranjas%22,%22bananas%22%5D&amp;textReferences=false">
 </iframe>
+<p><span class="small">Pressione Next&gt; para avançar.</span></p>
+</section>
+<section id="tipos-de-chaves-e-valores" class="slide level2">
+<h2>Tipos de chaves e valores</h2>
+<aside class="notes">
+<p>Num dicionário os valores podem ser de qualquer tipo simples ou composto. As chaves podem ser strings, inteiros, tuplos ou outros tipos, mas não podem ser mutáveis nem ter partes mutáveis. Por exemplo, uma chave não pode ser nem conter uma lista.</p>
+</aside>
+<audio data-autoplay data-src="media/15-types.ogg">
+</audio>
+<iframe width="1000" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=dic%20%3D%20%7B%7D%0A%0A%23%20VALORES%20podem%20ser%20de%20qualquer%20tipo.%0Adic%5B%22ana%22%5D%20%3D%20%281997,%205,%2014%29%0Adic%5B%22meses%22%5D%20%3D%20%5B%22janeiro%22,%20%22fevereiro%22%5D%0Adic%5B&#39;ovos&#39;%5D%20%3D%20%7B&#39;castanho&#39;%3A%206,%20&#39;branco&#39;%3A%20%5B2,%203%5D%7D%0A%0A%23%20CHAVES%20podem%20ser%20string,%20int,%20tuplos,%20...%0Adic%5B4%5D%20%3D%20&#39;quatro&#39;%0Adic%5B%2812,25%29%5D%20%3D%20&#39;Natal&#39;%0A%23%20MAS%20N%C3%82O%20podem%20ser%20mut%C3%A1veis%20nem%20ter%20partes%20mut%C3%A1veis%0Adic%5B%5B1,2%5D%5D%20%3D%20&#39;A&#39;%20%20%20%20%23-%3E%20TypeError&amp;codeDivHeight=400&amp;codeDivWidth=540&amp;cumulative=false&amp;curInstr=1&amp;heapPrimitives=false&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false">
+</iframe>
+<p><span class="small">Pressione Next&gt; para avançar.</span></p>
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-</section>
-<section id="percorrer-dicionários" class="slide level2">
-<h2>Percorrer dicionários</h2>
-<aside class="notes">
-<p>Por vezes temos de percorrer sistematicamente todos os elementos de um dicionário. Podemos fazê-lo com um ciclo <code>for</code> e usar um método para gerar uma sequência das chaves, dos valores ou dos pares chave-valor.</p>
-</aside>
-<audio data-autoplay data-src="media/50-traverse.ogg">
-</audio>
-<p>Podemos usar <code>for</code> e um dos métodos abaixo.</p>
-<table>
-<thead>
-<tr class="header">
-<th>Método</th>
-<th>Resultado</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>dict.keys()</code></td>
-<td>sequência das chaves</td>
-</tr>
-<tr class="even">
-<td><code>dict.values()</code></td>
-<td>sequência dos valores</td>
-</tr>
-<tr class="odd">
-<td><code>dict.items()</code></td>
-<td>sequência de pares (chave, valor)</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="percorrer-chaves" class="slide level2">
-<h2>Percorrer chaves</h2>
-<aside class="notes">
-<p>Neste exemplo percorremos um dicionário através da sequência das chaves. No corpo do ciclo indexamos com a chave para obter o valor associado.</p>
-</aside>
-<audio data-autoplay data-src="media/60-bykeys.ogg">
-</audio>
-<iframe width="1000" height="500" frameborder="0" data-src="https://pythontutor.com/iframe-embed.html#code=capitais%20%3D%20%7B&#39;Portugal&#39;%3A%20&#39;Lisboa&#39;,%20%20&#39;Angola&#39;%3A%20&#39;Luanda&#39;,%0A%20%20%20%20%20%20%20%20%20%20%20%20&#39;Brasil&#39;%3A%20&#39;Bras%C3%ADlia&#39;,%20&#39;Espanha&#39;%3A%20&#39;Madrid&#39;%7D%0A%23%20PERCORRER%20chaves%0Afor%20pais%20in%20capitais.keys%28%29%3A%0A%20%20%20%20capital%20%3D%20capitais%5Bpais%5D%0A%20%20%20%20print%28%22A%20capital%20de%22,%20pais,%20%22%C3%A9%22,%20capital%29%0A&amp;codeDivHeight=400&amp;codeDivWidth=550&amp;cumulative=false&amp;curInstr=2&amp;heapPrimitives=false&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false">
-</iframe>
-</section>
-<section id="percorrer-pares-chave-valor" class="slide level2">
-<h2>Percorrer pares chave-valor</h2>
-<aside class="notes">
-<p>Neste exemplo percorremos um dicionário através da sequência de pares chave-valor. No corpo do ciclo temos acesso direto tanto à chave como ao valor de cada elemento.</p>
-</aside>
-<audio data-autoplay data-src="media/70-byitems.ogg">
-</audio>
-<iframe width="1000" height="500" frameborder="0" data-src="https://pythontutor.com/iframe-embed.html#code=capitais%20%3D%20%7B&#39;Portugal&#39;%3A%20&#39;Lisboa&#39;,%20%20&#39;Angola&#39;%3A%20&#39;Luanda&#39;,%0A%20%20%20%20%20%20%20%20%20%20%20%20&#39;Brasil&#39;%3A%20&#39;Bras%C3%ADlia&#39;,%20&#39;Espanha&#39;%3A%20&#39;Madrid&#39;%7D%0A%23%20PERCORRER%20items%0Afor%20pais,%20capital%20in%20capitais.items%28%29%3A%0A%20%20%20%20print%28%22A%20capital%20de%22,%20pais,%20%22%C3%A9%22,%20capital%29&amp;codeDivHeight=400&amp;codeDivWidth=550&amp;cumulative=false&amp;curInstr=2&amp;heapPrimitives=false&amp;origin=opt-frontend.js&amp;py=3&amp;rawInputLstJSON=%5B%5D&amp;textReferences=false">
-</iframe>
-</section>
-<section class="slide level2">
-
 </section>
     </div>
   </div>
